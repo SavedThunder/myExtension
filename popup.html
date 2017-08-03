@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!--Link to css stylesheet-->
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<div align="center">
+		<h4 id="title">This is the header for my widget</h4><br>
+		<button value="off" id="button" type="button">This will change something</button>
+	<div>
+
+<script src="jQuery-3.2.1.js">
+	$('#button').click(function(){
+		if($('#button').value == 'off'){
+			$('#button').value = 'on';
+			$('#button').css({
+				'background-color' : '#cc3600'
+			});
+		}
+		else{
+			$('button').value = 'off';
+			$('#button').css({
+				'background-color' : 'Coral'
+			});
+		}
+	});
+</script>
+
+
+</html>
